@@ -1,0 +1,25 @@
+.heading_first {
+    color: #698f3f;
+    font-size: 28px;
+    font-family: Georgia, serif;
+    margin: 0 0 5px 0;
+}
+.heading_second {
+    color: #3a3e3b;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+}
+.about__text {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Catamaran", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Màn hình 1: Nav với padding và border theo đúng yêu cầu đề bài */
+.nav {
+    border: 1px solid red;
+    padding: 10rem 5rem;
+    width: 30rem;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav__item {
+    margin-bottom: 2rem;
+}
+.nav__link {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: calc(0.7rem - 0.4rem);
+    color: #3a3e3b;
+}
+
+/* Màn hình 2: Header background image và padding */
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/about-bcg.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #b5e87a;
+    letter-spacing: calc(0.7rem * 1.2);
+    margin: 0;
+}
+.header h1 {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 0.7rem;
+    margin: 1.5rem 0 2.5rem 0;
+}
+.btn.header__btn {
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+}
+
+/* Màn hình 3: Features với padding và border */
+#features {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+}
+.feature_item {
+    width: 25%;
+    padding: 3rem 1.5rem;
+    border: 1px solid red;
+    text-align: center;
+    box-sizing: border-box;
+}
+.feature__title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: calc(0.7rem - 0.2rem);
+    color: #698f3f;
+    margin-bottom: 1rem;
+}
+.feature__text {
+    font-size: 1.6rem;
+    color: #3a3e3b;
+    margin: 0;
+}
+
+/* Màn hình 4: About với border và border-radius */
+#about {
+    display: flex;
+    padding: 4rem 2rem;
+    gap: 4rem;
+    align-items: center;
+}
+.about_left {
+    width: 50%;
+    border: 7px solid #698f3f;
+    border-radius: 22px;
+    background-color: #698f3f;
+    box-sizing: border-box;
+}
+.about_left img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+}
+.about_right {
+    width: 50%;
+}
+.heading_first {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #698f3f;
+    letter-spacing: calc(0.7rem * 1.2);
+    margin: 0 0 0.5rem 0;
+}
+.heading_second {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    color: #3a3e3b;
+    margin: 0 0 1.5rem 0;
+}
+.heading-second--white {
+    color: #fff;
+}
+.about__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Màn hình 5: Products với margin, padding, border, border-radius */
+#products {
+    background-color: #3a3e3b;
+    padding: 4rem 3rem;
+    display: flex;
+    gap: 2rem;
+}
+.product_item_intro {
+    width: 34%;
+}
+.products__text {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+.product_item {
+    width: 33%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border: 1px solid red;
+    border-bottom: 5px solid #698f3f;
+    box-sizing: border-box;
+    text-align: center;
+}
+.product__img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 22px;
+}
+.product-item__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: calc(0.7rem - 0.3rem);
+    margin: 2rem 0;
+}
+.product-item__price {
+    font-family: "Grand Hotel", cursive;
+    font-size: 2.6rem;
+    color: #698f3f;
+    font-weight: 700;
+    margin: 0;
+}
+.product-item__price span {
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Màn hình 6: Box model outline & outline-offset cho Buttons */
+.btn {
+    display: inline-block;
+    color: #3a3e3b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #698f3f;
+    color: #fff;
+    outline: 3px solid #698f3f;
+    outline-offset: 4px;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn:hover {
+    background-color: #557432;
+    outline-color: #557432;
+}
+
+/* Contact */
+.contact {
+    background: #f1f5f8;
+    padding: 4rem 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.contact-info, .contact-form {
+    width: 50%;
+}
+.contact-info {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+.contact-item {
+    margin-bottom: 2rem;
+}
+.contact-item h3 {
+    color: #698f3f;
+    margin-bottom: 0.5rem;
+}
+.contact-item p {
+    margin: 0;
+}
+.contact-form {
+    background: #fff;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 6px;
+}
+.contact-form h3 {
+    color: #617d98;
+    margin-top: 0;
+}
+.form-control {
+    width: 100%;
+    background: #f1f5f8;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+.submit-btn {
+    width: 100%;
+}

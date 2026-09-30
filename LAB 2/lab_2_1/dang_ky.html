@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 - Đăng ký</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <p><b>Họ và tên:</b><br>
+        <input type="text" name="fullname" size="40"></p>
+
+        <p><b>Giới tính:</b>
+        <label><input type="radio" name="gender" value="nam" checked> Nam</label>
+        <label><input type="radio" name="gender" value="nu"> Nữ</label></p>
+
+        <p><b>Hình ảnh:</b><br>
+        <input type="file" name="photo" accept="image/*"></p>
+
+        <p><b>Quốc tịch:</b><br>
+        <select name="nationality">
+            <option value="vn">Việt Nam</option>
+            <option value="us" selected>United States</option>
+            <option value="jp">Japan</option>
+        </select></p>
+
+        <p><b>Sở thích:</b><br>
+        <label><input type="checkbox" name="hobby" value="the_thao"> Thể thao</label>
+        <label><input type="checkbox" name="hobby" value="du_lich" checked> Du lịch</label>
+        <label><input type="checkbox" name="hobby" value="am_nhac"> Âm nhạc</label>
+        <label><input type="checkbox" name="hobby" value="am_thuc"> Ẩm thực</label></p>
+
+        <p><b>Ghi chú:</b><br>
+        <textarea name="note" rows="4" cols="45"></textarea></p>
+        <hr>
+        <p><input type="submit" value="Đăng ký"> <input type="reset" value="Nhập lại"></p>
+    </form>
+</body>
+</html>
